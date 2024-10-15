@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CV</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f7f7f7; /* Light grey background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles for the header section */
+        header {
+            background-color: #ff9800; /* Orange background */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for the header image */
+        header img {
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        /* Styles for paragraphs in the header */
+        header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        /* Styles for labels in the header */
+        header label {
+            font-weight: bold;
+        }
+
+        /* Styles for all sections */
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles for main headings */
+        h1, h2 {
+            color: #ff9800; /* Orange color */
+        }
+
+        /* Styles for subsection headings */
+        h2 {
+            border-bottom: 2px solid #ff9800; /* Orange underline */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for unordered lists */
+        ul {
+            list-style-type: none; /* Removes default bullet points */
+            padding: 0;
+        }
+
+        /* Styles for list items */
+        ul li {
+            background-color: #e0e0e0; /* Light grey background */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Styles for forms */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Styles for form labels */
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        /* Styles for form input fields and textarea */
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd; /* Light grey border */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        /* Styles for form buttons */
+        form button {
+            background-color: #ffeb3b; /* Yellow background */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* Styles for button on hover */
+        form button:hover {
+            background-color: #fdd835; /* Darker yellow background on hover */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My CV</h1>
+        <img src="level2 saved work/html task/Myimage.jpg" alt="Myimage" width="720" height="1280">
+        <p><label>Name:</label> Emaan Isaacs </p>
+        <p><label>Contact Number:</label> 0823709256</p>
+        <p><label>Email:</label> emaanwaggie@gmail.com</p>
+    </header>
+
+    <section id="bio">
+        <h2>About Me</h2>
+        <p>
+            I’m Emaan, a Graphic Designer with experience in Illustrator, InDesign and Photoshop.
+            I’m passionate about integrating the beauty of the past with the modern tech of the present and I am driven by making a better life for my family.
+            I enjoy learning new things and I am always up for new challenges.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills and Competencies</h2>
+        <ul>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>Photoshop</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Diploma for Graphic Design</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <p><strong>Graphic Designer</strong> - Colour Works, 2018</p>
+        <p>Created advertisements and created work for an entrepreneurial bootcamp called "Over The Rainbow".</p>
+    </section>
+
+    <section id="search">
+        <h2>Search CV</h2>
+        <form action="/search" method="GET">
+            <label for="search-keywords">Enter keywords:</label>
+            <input type="text" id="search-keywords" name="keywords" placeholder="Search keywords">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/contact" method="POST">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" required>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" required>
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
